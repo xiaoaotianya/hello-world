@@ -8,7 +8,7 @@
  * 
  * 
  * */
-
+//kjhfskjahjfkshjfkjsjlkf
 function $(selector){
 	if(selector.substring(0,1)=='#'){
 		return document.getElementById(selector.substring(1));

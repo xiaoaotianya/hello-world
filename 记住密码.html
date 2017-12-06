@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+      <script type="text/javascript" src="public.js" ></script>
+			
+		</script>
+	</head>
+	<body>
+		<fieldset style="width:400px">
+			<legend>用户信息</legend>
+			<input type="text" id="" value="" /><br>
+			<input type="password" name="" /><br>
+			<input type="checkbox" />记住用户名和信息
+			<input type="button" value="登录" />
+			
+			
+		</fieldset>
+		<script type="text/javascript">
+			var inpu=document.getElementsByTagName('input');
+			
+			if(getcookie('usename')&&getcookie('password')){
+				inpu[0].value=getcookie('usename');
+				inpu[1].value=getcookie('password');
+				inpu[2].checked=true;
+			}
+			
+			inpu[3].onclick=function(){
+				if(inpu[2].checked){
+				setcookie("usename",inpu[0].value,10);
+				setcookie("password",inpu[1].value,10);
+				}else{
+					removecookie('usename');
+					removecookie('password');
+					
+				}
+				
+			}
+		
+			
+			
+			
+		</script>
+	</body>
+</html>

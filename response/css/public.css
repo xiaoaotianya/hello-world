@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #F2F2F2;
+  padding: 5px;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.header {
+  font-size: 14px;
+  width: 100%;
+  background: #f6f6f6;
+}
+.header .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px 10px 10px;
+}
+.header .wrapper .left {
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+.header .wrapper .right {
+  float: right;
+}
+.header .wrapper .right .login, .header .wrapper .right .quickMenu, .header .wrapper .right .new-home {
+  height: 20px;
+  float: left;
+}
+
+.quickMenu dl {
+  float: left;
+  position: relative;
+}
+.quickMenu dl dt {
+  border-left: solid 1px #E1E1E1;
+  padding-left: 14px;
+  font-size: 14px;
+  color: #7b7b7b;
+  margin: 0 10px 0 0;
+}
+.quickMenu dl dt .arrow {
+  background: url(../img/top_bg.png) no-repeat 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  width: 6px;
+  height: 3px;
+  margin-left: 6px;
+  transition: all 0.5s;
+}
+.quickMenu dl:hover .arrow {
+  transform: rotateZ(180deg);
+}
+.quickMenu dl:hover .arrow1 {
+  display: block;
+}
+.quickMenu dl:hover dd {
+  height: 100px;
+  border: solid 1px #E1E1E1;
+  border-top: none;
+}
+.quickMenu dl dd {
+  width: 80px;
+  height: 0px;
+  background: #fff;
+  position: absolute;
+  border-top: none;
+  overflow: hidden;
+  left: 5px;
+  padding-left: 8px;
+  transition: all 0.2s;
+  z-index: 100;
+}
+.quickMenu dl dd ul li {
+  margin: 10px 0 10px 0;
+}
+
+.arrow1 {
+  width: 80px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  border: solid 1px #E1E1E1;
+  text-align: center;
+  padding-left: 8px;
+  display: none;
+  color: #7b7b7b;
+}
+.arrow1 .arrow {
+  background: url(../img/top_bg.png) no-repeat 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  width: 6px;
+  height: 3px;
+  margin-left: 6px;
+  transition: all 0.5s;
+}
+
+.login .c-danger {
+  color: red;
+}
+
+.new-home {
+  margin-left: 10px;
+}
+.new-home img {
+  vertical-align: middle;
+}
+
+.login li a:hover, .quickMenu li a:hover, .new-home li a:hover {
+  color: red;
+}
+
+.search {
+  width: 100%;
+  padding-bottom: 20px;
+  background: #fff;
+}
+
+.search .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.search .wrapper .logo {
+  width: 240px;
+  height: 68px;
+  float: left;
+  margin: 22px 80px auto 0;
+}
+.search .wrapper .search-layout {
+  width: 550px;
+  float: left;
+  margin: 24px 0 0 38px;
+}
+.search .wrapper .search-layout .top {
+  display: block;
+  width: 100%;
+  height: 36px;
+  position: relative;
+  border: 2px solid #f15c18;
+}
+.search .wrapper .search-layout .top .title {
+  float: left;
+  width: 68px;
+  height: 36px;
+  background: #f8f8f8;
+}
+.search .wrapper .search-layout .top .title a {
+  display: block;
+  font-size: 12px;
+  border-right: #f0f0f0 1px solid;
+  height: 36px;
+  background: #f8f8f8;
+  width: 53px;
+  line-height: 36px;
+  padding-left: 15px;
+  position: relative;
+}
+.search .wrapper .search-layout .top .title a i {
+  display: block;
+  position: absolute;
+  left: 53px;
+  top: 17px;
+  width: 8px;
+  height: 4px;
+  background: url(../img/top_bg.png) -20px 0;
+}
+.search .wrapper .search-layout .top .input {
+  float: left;
+}
+.search .wrapper .search-layout .top .input input {
+  width: 357px;
+  height: 24px;
+  padding: 7px 5px 5px 20px;
+  line-height: 22px;
+  color: #555;
+  border: none;
+  outline: none;
+}
+.search .wrapper .search-layout .top .botton {
+  float: left;
+  width: 100px;
+}
+.search .wrapper .search-layout .top .botton .bnt {
+  width: 100px;
+  height: 36px;
+  background: #f15c18;
+  line-height: 36px;
+  color: #555;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search .bottom {
+  width: 550px;
+}
+.search .bottom ul li {
+  float: left;
+}
+.search .bottom ul li a {
+  font-size: 12px;
+  padding: 0 7px;
+  color: #999;
+  border-right: 1px solid #999;
+}
+.search .bottom ul li:nth-of-type(7) a {
+  border-right: none;
+}
+
+.search-menu {
+  font-size: 12px;
+  margin-top: 24px;
+  float: right;
+}
+.search-menu .left, .search-menu .right {
+  width: 116px;
+  height: 36px;
+  float: left;
+  cursor: pointer;
+}
+.search-menu .left dl, .search-menu .right dl {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.search-menu .left dl dt, .search-menu .right dl dt {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+}
+.search-menu .left dl dt span, .search-menu .right dl dt span {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 18px;
+  margin: 6px 10px;
+  background: url(../img/yangguang.png) no-repeat -7px -4px;
+}
+.search-menu .left dl dt div, .search-menu .right dl dt div {
+  float: left;
+  width: 60px;
+  height: 20px;
+  display: block;
+  color: #000000;
+  margin: 9px 0px;
+}
+.search-menu .left dl dt div a, .search-menu .right dl dt div a {
+  width: 100%;
+  height: 100%;
+}
+.search-menu .left dl dt i, .search-menu .right dl dt i {
+  margin: 15px 0;
+  float: left;
+  display: block;
+  width: 10px;
+  height: 18px;
+  background: url(../img/top_bg.png) no-repeat -150px -16px;
+}
+
+.search-menu .left dd {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: -176px;
+  width: 272px;
+  height: 159px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+.search-menu .left dd .yin {
+  width: 116px;
+  height: 2px;
+  background: #FFF;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+.search-menu .left dd .user-box {
+  height: 59px;
+}
+.search-menu .left dd .user-box .user-avatar {
+  float: left;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.search-menu .left dd .user-box .user-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.search-menu .left dd .user-box .user-info {
+  float: right;
+  width: 190px;
+}
+.search-menu .left dd .user-box .user-info a {
+  border-radius: 3px !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  padding: 5px 10px !important;
+  background-color: #fff;
+  border-color: #E2E7EB;
+  color: #333;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid #f0f0f0;
+}
+.search-menu .left dd .user-box .user-info a:hover {
+  background-color: #E2E7EB;
+}
+
+.search-menu .right dd {
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: -254px;
+  width: 350px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+.search-menu .right dd .yin {
+  width: 116px;
+  height: 2px;
+  background: #FFF;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+.search-menu .right dd .user-box .user-avatar {
+  font-weight: 900;
+  padding-bottom: 20px;
+  border-bottom: #555555 1px solid;
+}
+.search-menu .right dd .user-box .user-info {
+  padding: 20px 20px;
+}
+
+.user-centent-menu {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px dashed #E2E7EB;
+  padding-top: 10px;
+}
+.user-centent-menu ul {
+  width: 100%;
+}
+.user-centent-menu ul li {
+  width: 50%;
+  float: left;
+  padding: 4px 0;
+  margin: 0;
+}
+.user-centent-menu ul li a {
+  color: #333;
+  font-size: 12px;
+}
+
+img {
+  border: 0;
+}
+
+.user-centent-menu a:hover {
+  color: #FF0000;
+}
+
+.search-menu .right {
+  margin-left: 10px;
+}
+
+.search-menu .right dl dt span {
+  background: url(../img/yangguang.png) no-repeat -36px -3px;
+  margin: 6px 7px;
+}
+
+.search-menu .right dl dt i {
+  margin: 15px 0 15px 7px;
+}
+
+#nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: #F15C18 1px solid;
+}
+#nav .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+#nav .wrapper .all-category {
+  float: left;
+  width: 172px;
+  height: 40px;
+  background-color: #F15C18;
+}
+#nav .wrapper .all-category a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+#nav .wrapper ul {
+  float: left;
+}
+#nav .wrapper ul li {
+  float: left;
+  padding: 0 20px;
+  height: 40px;
+}
+#nav .wrapper ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+#nav .wrapper ul li a:hover {
+  color: #FF6D02;
+}
+
+.footer {
+  background: #343a3a;
+}
+.footer .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer .wrapper ul {
+  padding: 10px 0;
+}
+.footer .wrapper ul li {
+  color: #fff;
+  float: left;
+}
+.footer .wrapper ul li a {
+  color: #fff;
+}
+.footer .wrapper ul li i {
+  color: #fff;
+}
+
+.ul1 {
+  width: 500px;
+  margin: 0 auto;
+}
+.ul1 li a {
+  padding: 0 15px;
+  border-right: 1px solid #fff;
+  font-size: 12px;
+}
+.ul1 li .border-none {
+  border-right: none;
+}
+.ul1 li:hover {
+  text-decoration: underline;
+}
+
+.ul2 {
+  width: 900px;
+  margin: 0 auto;
+}
+.ul2 li a {
+  padding: 0 15px;
+  font-size: 12px;
+}
+.ul2 li:hover {
+  text-decoration: underline;
+}
+.ul2 li i {
+  background: url(../img/gh.png);
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 18px;
+  height: 20px;
+  display: inline-block;
+}
+
+.ul2 li .ul2-a {
+  padding: 0 15px 0 0;
+}
+
+.ul3 {
+  width: 550px;
+  margin: 0 auto;
+}
+.ul3 li {
+  font-size: 12px;
+}
+.ul3 li em {
+  font-size: 12px;
+}
+
+.ul4 {
+  width: 520px;
+  margin: 0 auto;
+}
+.ul4 a {
+  display: block;
+  width: 108px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.ul4 li:nth-of-type(1) a {
+  background: url(../img/yangguang-footer.png) no-repeat 0 0;
+}
+
+.ul4 li:nth-of-type(2) a {
+  background: url(../img/yangguang-footer.png) no-repeat -244px 0;
+}
+
+.ul4 li:nth-of-type(3) a {
+  background: url(../img/yangguang-footer.png) no-repeat -366px 0;
+}
+
+.ul4 li:nth-of-type(4) a {
+  background: url(../img/yangguang-footer.png) no-repeat -488px 0;
+}
+
+/*# sourceMappingURL=public.css.map */

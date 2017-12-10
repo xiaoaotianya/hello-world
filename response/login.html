@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css"/>
+	</head>
+	<body>
+		<div class='head'><!--登录头部-->
+			<div class="wrapper clear">
+				<div class="left">
+					<h1 class="site-logo"><a href="https://www.cnrmall.com/"><img src="https://pic4.cnrmall.com/image/be/d4/bed4afca2106a3cb0049d937c31e0f11.png" alt=""></a>
+				</div>
+				<div class="right">
+					 <span class="avatar">
+				         <img src="https://static.cnrmall.com/public/img/avatar.gif">
+				      </span>
+				     <span class="register">您好，欢迎来到央广购物<br>已注册的会员请登录，或立即<a title="" href="https://www.cnrmall.com/register" class="register">注册新会员</a></span>
+				</div>
+			</div>
+		</div>	
+		
+		<div class="login"><!--左侧图片-->
+			<div class="login-center clear">
+				<div class="left">
+					<img src="https://static.cnrmall.com/public/img/login_img.jpg">
+				</div>
+				<div class="right"><!--右侧登录-->
+					<div class="arrow"></div>
+					<div class="login-main" id="login-main"><!--用户和手机登录标题-->
+						<ul>
+							<li class="active">用户登录<i></i></li>
+							<li>手机号码登录<i></i></li>
+						</ul>
+						<div class="login-text">
+							<div class="login-text-main"><!--手机登录-->
+								<form  method="post" onsubmit="return false";>
+									<div class="zhanghao" id="loguser"><!--账号-->
+										<dl>
+											<dt>账号　:</dt>
+											<dd>
+												<input type="text" placeholder="手机号/会员名/邮箱" />
+											</dd>
+										</dl>
+										<div class="cuo"><!--验证错误-->
+												<span class="cuo-1">√</span>
+												<span class="cuo-2"></span>
+										</div>
+									</div>
+										<div class="password" id="logpass"><!--密码-->
+										<dl>
+											<dt>密码　:</dt>
+											<dd>
+												<input type="password" placeholder="输入账户密码" />
+											</dd>
+										</dl>
+										<div class="cuo"><!--验证错误-->
+												<span class="cuo-1">√</span>
+												<span class="cuo-2"></span>
+											</div>
+									    </div>
+									    <div class="yanzhnegma clear" id="logyan"><!--验证码-->
+											<div class="left-1">
+												验证码　:
+											</div>
+											<div class="middle">
+												<input type="text" name="" id="" placeholder="请输入验证码" />
+											</div>
+											<div class="right-1">
+												<div class="yanzheng">
+													
+												</div>
+												<div class="huan">
+													看不清，换一张
+												</div>
+												<div class="cuo">
+													<span class="cuo-1">√</span>
+												    <span class="cuo-2"></span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="zidong clear"><!--自动勾选框-->
+											<div class="zidong-left">
+											    <input type="checkbox" id="" value="" checked="checked"/>
+											    <span>七天自动登录</span>
+											</div>
+											<div class="zidong-right">
+												<a href="https://www.cnrmall.com/findpwd" class="forget">忘记密码</a>
+											</div>
+										</div>
+									      
+									    <div class="button" id="logbutton"><!--登录-->
+											<input type="button" id="logbnt" value="登　录" name="submit" />
+										</div>
+										<div class="weixin"><!--微信小图标-->
+											<p>使用合作账号登录</p>
+											<p><a href="" class="clear"><i></i><span>微信</span></a></p>
+										</div>
+								</form>
+							</div>
+						 <!--手机登录-->
+							<div class="login-text-main3">
+								<form onsubmit="return false" method="post">
+									<div class="zhanghao"><!--手机账号-->
+										<dl>
+											<dt>手机号　:</dt>
+											<dd>
+												<input type="text" placeholder="可填写已注册的手机号接收短信"  style="width:180px; font-size: 12px;"/>
+											</dd>
+										</dl>
+										<div class="cuo" style="width:100px;"><!--验证错误-->
+												<span class="cuo-1">√</span>
+												<span class="cuo-2"></span>
+										</div>
+									</div>
+									    <div class="yanzhnegma clear"><!--验证码-->
+											<div class="left-1">
+												验证码　:
+											</div>
+											<div class="middle">
+												<input type="text" name="" id="" placeholder="请输入验证码" />
+											</div>
+											<div class="right-1">
+												<div class="yanzheng">
+													
+												</div>
+												<div class="huan">
+													看不清，换一张
+												</div>
+											</div>
+										</div>
+										
+										<div class="fasong" style="margin-top:10px"><!--短信验证码-->
+											<p style="font-size:12px; color:#999">正确输入上方验证码后，点击<a href="#" ><i></i>发送短信动态码</a>，查收短信将系统发送的“6位短信动态码”输入到下方验证后登录。</p> 
+										</div>
+										
+									      <div class="password"><!--动态验证码-->
+										<dl>
+											<dt>动态码　:</dt>
+											<dd>
+												<input type="password" placeholder="输入六位动态验证码" />
+											</dd>
+										</dl>
+										<div class="cuo"><!--验证错误-->
+												
+											</div>
+									    </div>
+									    <div class="button"><!--登录-->
+											<input type="button" id="mo-bnt" value="登　录"  name="submit"/>
+										</div>
+										<div class="weixin">
+											<p>使用合作账号登录</p>
+											<p><a href="" class="clear"><i></i><span>微信</span></a></p>
+										</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			
+		</div>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+	    	$('#footer').load('public-footer.html')	    	
+	    </script>
+	</body>
+</html>

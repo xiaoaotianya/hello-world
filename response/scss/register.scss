@@ -1,0 +1,307 @@
+@charset "utf-8";
+@import "publics";
+//头部
+.head{
+    width:100%;
+    background: #fff;
+    height:80px;
+   
+    .wrapper{
+        width:1000px;
+        margin:0 auto;       
+     
+        .left{
+            float:left;
+        }
+        .right{
+            font-size: 14px;
+            color: #AAA;
+            line-height: 24px;
+            float: right;
+            height: 24px;
+            margin-top: 50px;
+            a{
+                font-weight: 600;
+                margin-left: 4px;
+                color: #06C
+            }
+        }
+    }
+    
+}
+//注册左边
+#nc-register-bg{
+    width:100%;
+    height:630px;
+    background: url(https://static.cnrmall.com/web/static/img/register_bg.png);
+    padding-top:60px;
+    .nc-register-box{
+        background: rgba(0,0,0,0.15);
+        width: 860px;
+        height: 560px;
+        padding: 10px;
+        margin: 0px auto;
+        .layout{
+            background-color: #FFF;
+            display: block;
+            width: 820px;
+            height: 520px;
+            padding: 19px;
+            border: solid 1px #CCC;
+            overflow: hidden;
+            .left{
+                width: 600px;
+                height: 520px;
+                float: left;
+                 .zhuce{
+                    width: 580px;
+                    height: 40px;
+                 
+                    .phone{    
+                        width:100%;   
+                        height: 100%;     
+                        border-bottom: solid 1px #E6E6E6;
+                        a{
+                           font-size: 20px; 
+                           margin-left:60px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+//手机号码
+#nc-register-bg .liebiao{
+     width: 580px;
+     .biao{
+         padding: 25px 80px 0 100px;
+         .shouji,.password,.confirm-password{
+             width:400px;
+             height:40px;
+             border: #E6E6E6 1px solid;
+             position: relative;margin-top:10px;
+             dt{
+                   @include yan-dt();
+             }
+             dd{
+                  @include yan-dd();
+                 input{
+                     @include yan-input();
+                     font-size: 12px;                                        
+                 }
+             }
+             .cuo{
+                 
+                  @include cuo();
+                   width:150px;
+                 .cuo-1{
+                     @include cuowu-1();
+                    
+                 }
+                 .cuo-2{                    
+                      @include cuowu-2();                           
+                 }
+                 
+             }
+         }
+     }
+}
+
+
+//用户名
+.username{
+             width:400px;
+             height:40px;
+             border: #E6E6E6 1px solid;
+             position: relative;
+             dt{
+                   @include yan-dt();
+             }
+             dd{
+                 @include yan-dd();
+                 input{
+                    @include yan-input();                                
+                     font-size: 8px;                
+                     width: 190px;
+                 }
+             }
+             .cuo{
+                  @include cuo();
+                 .cuo-1{
+                     @include cuowu-1();
+                    
+                 }
+                 .cuo-2{
+                      @include cuowu-2();
+                    
+                 }
+             }
+         }
+
+
+
+
+
+
+
+
+//验证码
+#nc-register-bg .yanzhnegma{   
+             margin-top:10px;
+             width:400px;
+             height:40px;
+             border: #E6E6E6 1px solid;
+             position: relative;
+             .left-1{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #666;
+                    width: 88px;
+                    padding: 10px 0 10px 20px;
+                    float: left
+             }
+             .middle{
+                 float:left;
+                 height: 28px;              
+                padding: 8px 0;
+                width:150px; 
+                input{
+                    @include yan-input();
+                    font-size: 12px;                                         
+                    display: block;
+                 }
+             }
+             .right-1{
+                 float: right;
+                 height:40px;
+                 width:120px;
+                 position: relative;
+                 .huan{
+                     width:100%;
+                     height:100%;
+                     position: absolute;
+                     background: rgba(0,0,0,0.5);
+                     line-height:38px;
+                     cursor: pointer;
+                     color: #fff;
+                     display: none;
+                     left:0;
+                     top:0;
+                     font-size:14px;
+                     text-align: center;
+                     
+                 }
+                 &:hover .huan{
+                       display: block;  
+                     }
+             }
+}
+
+
+.right-1 .yanzheng{
+   @include yanzhengma();
+    
+}
+.right-1 .cuo{
+         @include cuo();
+         width:180px;
+         right:0px;                
+         top:40px;
+         .cuo-1{
+              @include cuowu-1();
+                    
+              }
+         .cuo-2{
+              @include cuowu-2();
+            
+         }
+        
+}
+//登录协议
+#nc-register-bg .xieyi{
+    width:400px;
+    height:30px;
+    margin-top:20px;
+    a{
+        color: blue;
+    }
+    span{
+        margin:0 5px;
+    }
+}
+//提交
+#nc-register-bg .button{
+    width:400px;
+    height:40px;
+    margin-top:20px;
+    border-radius: 10px;
+    input{
+        width:100%;
+        height:100%;
+        background: #FF500B;
+        border: none;
+         border-radius: 5px;
+       font-family: "microsoft yahei";
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFf;
+        cursor: pointer;
+        
+    }
+}
+//右边内容
+#nc-register-bg .right{
+        width: 200px;
+        height: 500px;
+        float: right;
+        padding: 20px 0 0 19px;
+        border-left: solid 1px #E6E6E6;
+            .right-after{
+                h4{
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: 20px;
+                    margin-bottom: 20px;
+                    color: #333; 
+                }
+                ul{
+                    li{
+                            color: #999;
+                            line-height: 24px;
+                            margin-bottom: 10px;
+                            padding-left: 12px;
+                            font-size: 12px;
+                            
+                            i{
+                                display: block;
+                                height:24px;
+                                width:24px;
+                                margin-right:10px;
+                                float: left;
+                                vertical-align: middle;
+                            }
+                            .li1{
+                               background: url(../img/login_pic.png) no-repeat 0 -78px; 
+                            }
+                            .li2{
+                               background: url(../img/login_pic.png) no-repeat -31px -78px; 
+                            }
+                            .li3{
+                               background: url(../img/login_pic.png) no-repeat -61px -78px; 
+                            }
+                            .li4{
+                               background: url(../img/login_pic.png) no-repeat -92px -78px; 
+                            }
+                            .li5{
+                               background: url(../img/login_pic.png) no-repeat -121px -78px; 
+                            }
+                           
+                }
+                    }
+                }
+            }
+

@@ -1,0 +1,373 @@
+@charset "utf-8";
+@import "publics";
+//头部
+.head{
+    width:100%;
+    background: #fff;
+    height:100px;
+    .wrapper{
+        width:1000px;
+        margin:0 auto;       
+     
+        .left{
+            float:left;
+        }
+        .right{
+            font-size: 14px;
+            color: #AAA;
+            line-height: 24px;
+            float: right;
+            height: 24px;
+            margin-top: 50px;
+            .avatar{
+            width: 40px;
+            height: 40px;
+            margin-right: 6px;
+            border-radius: 100%;
+            img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                }
+            }
+            .register{vertical-align: top;
+                      display: inline-block;
+                      a{
+                          font-weight: 600;
+                           margin-left: 4px;
+                           color: blue;
+                      }
+                
+            }
+            }
+            
+            
+        }
+    }
+  
+  //登录界面
+ .login-center{
+     width:1000px;
+     height:600px;
+     margin: 20px auto;
+     .left{//左侧图片
+        width: 450px;
+        height: 350px;
+        float: left;
+        margin: 30px 0;
+        position: relative;
+        z-index: 1;
+     }
+     .right{//右侧登录界面
+        background-color: #FFF;
+        width: 440px;
+        padding: 19px 19px 60px 19px;
+        border: solid 1px #E6E6E6;
+        border-radius: 5px;
+        float: right;
+        position: relative;
+        z-index: 1;
+        .arrow{//右侧向上的箭头
+            background: url(../img/login_pic.png) no-repeat -280px 0;
+            width: 17px;
+            height: 9px;
+            position: absolute;
+            z-index: 1;
+            top: -9px;
+            left: 160px;
+        }
+     }
+ }  
+
+
+.login-main{//登录的主内容
+    width:100%;
+    ul{
+        height: 40px;
+        width:100%;
+        border-bottom: solid 1px #E6E6E6;
+        li{//用户名和手机登录
+            float: left;
+            width: 50%;
+            cursor: pointer;
+            height: 40px;
+            text-align: center;
+            position: relative;　           
+                i{//下方的箭头
+                    display: block;    
+                    margin-left:-10px;
+                    position: absolute;
+                    left:50%;
+                    width:0;
+                    bottom: -19px;   
+            }          
+        }
+    }
+}
+
+.login-main .active{//点击登录方式的格式
+    border-bottom: 3px solid #FF500B;
+    i{
+            display: block;    
+            border:8px solid transparent;
+            border-top-color:  #FF500B;
+            position: absolute;
+            left:50%;
+            width:0;
+            bottom: -19px;
+                    
+                   
+                }
+    
+}
+.login-text{//登录界面的外框
+    height:250px;
+    margin-top: 30px;
+    padding: 0 40px 20px 40px;
+    position: relative;
+    .login-text-main{//内框 用户名登录
+        width:370px;
+        background: #fff;
+        position:absolute;
+        left:36px;
+        top:0;
+        
+        
+        
+    }
+    .login-text-main3{//手机登录
+        width:370px;
+        position:absolute;
+        background: #fff;
+        left:-400px;
+        top:0;  
+        display: none;
+    }
+}
+ .login-text-main3{//手机登录的验证码
+     .fasong{
+         a{
+             background: #21b384;
+             padding: 0 5px;
+             color: #fff;
+             
+         }
+     }
+ }
+
+         .zhanghao{//账号登录
+             width:370px;
+             height:40px;
+             border: #E6E6E6 1px solid;
+             position: relative;
+             dt{
+                   @include yan-dt();
+                   width:66px;
+             }
+             dd{
+                @include yan-dd();
+                 input{
+                   @include yan-input()
+                 }
+             }
+             .cuo{
+                 @include cuo();
+                 width:140px;
+                  .cuo-1{
+                     @include cuowu-1();
+                    
+                 }
+                 .cuo-2{
+                      @include cuowu-2();
+                    
+                 }
+             }
+         }
+
+ .password{//密码登录
+             width:370px;
+             height:40px;
+             border: #E6E6E6 1px solid;
+             position: relative;
+             margin-top:10px;
+             dt{
+                   @include yan-dt();
+             }
+             dd{
+                 @include yan-dd();             
+                 padding: 6px 0;
+                 input{
+                  @include yan-input()
+                 }
+             }
+             .cuo{
+                 @include cuo();
+                 width:150px;
+                 height:25px;                
+                 .cuo-1{
+                     @include cuowu-1();
+                    
+                 }
+                 .cuo-2{
+                      @include cuowu-2();           
+                 }
+             }
+         }
+
+
+
+
+ .yanzhnegma{//验证码登录
+             margin-top:10px;
+             width:370px;
+             height:40px;
+             border: #E6E6E6 1px solid;
+             position: relative;
+             .left-1{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #666;
+                    width: 88px;
+                    padding: 10px 0 10px 20px;
+                    float: left
+             }
+             .middle{
+                float:left;
+                height: 28px;              
+                padding: 8px 0;
+                width:100px; 
+                input{
+                    @include yan-input();                        
+                    display: block;
+                    width:100px;         
+                 }
+             }
+             .right-1{
+                 float: right;
+                 height:40px;
+                 width:120px;
+                 position: relative;
+                 .huan{
+                     width:100%;
+                     height:100%;
+                     position: absolute;
+                     background: rgba(0,0,0,0.5);
+                     line-height:38px;
+                     cursor: pointer;
+                     color: #fff;
+                     display: none;
+                     left:0;
+                     top:0;
+                     font-size:14px;
+                     text-align: center;
+                 }
+                  &:hover .huan{
+                       display: block;  
+                     }
+             }
+}
+
+    
+
+.right-1 .yanzheng{
+   @include yanzhengma();   
+}
+.right-1 .cuo{
+        @include cuo();
+         width:130px;
+         right:60px;                
+         top:40px;
+         .cuo-1{
+              @include cuowu-1();
+                    
+              }
+         .cuo-2{
+              @include cuowu-2();
+            
+         }
+        
+}
+.zidong{//自定勾选
+         margin-top:5px;
+         width:370px;
+         height:30px;
+         .zidong-left{
+             float: left;
+             input{
+                 width:14px;
+                 height:14px;
+             }
+             span{
+                 font-size: 14px;
+                 vertical-align: top;
+                   color: #7b7b7b;
+             }
+         }
+         .zidong-right{
+             float: right;
+             a{
+                color: blue;
+                font-size:14px;
+             }
+         }
+            
+}
+.button{//登录按钮
+    width:370px;
+    height:40px;
+    margin-top:5px;
+    border-radius: 10px;
+    input{
+        width:100%;
+        height:100%;
+        background: #FF500B;
+        border: none;
+          border-radius: 5px;
+       font-family: "microsoft yahei";
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFf;
+        cursor: pointer;
+        
+    }
+}
+
+.weixin{//微信图标
+    margin-top:10px;
+    font-size: 10px;
+    font-weight: 900;
+   
+   
+        i{
+         float: left;
+        width:32px;
+        height:32px;
+        display:block;
+        background: url(../img/login_pic.png) no-repeat -64px 0;
+    }
+    span{
+        width:40px;
+        height:32px;
+        display: block;
+        float: left;
+        margin-left:10px;
+        margin-top:10px;
+    }
+ 
+}
+
+.weixin a{
+    display: block;
+    width:100px;
+    height:35px;
+    &:hover i{
+         background: url(../img/login_pic.png) no-repeat -160px 0;
+    }
+    &:hover span{
+         color: #4EA335;
+    }
+    
+}
+.weixin p{
+    margin-top:10px;
+}

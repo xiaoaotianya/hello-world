@@ -1,0 +1,472 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #F2F2F2;
+  padding: 5px;
+}
+
+.head {
+  width: 100%;
+  background: #fff;
+  height: 100px;
+}
+.head .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.head .wrapper .left {
+  float: left;
+}
+.head .wrapper .right {
+  font-size: 14px;
+  color: #AAA;
+  line-height: 24px;
+  float: right;
+  height: 24px;
+  margin-top: 50px;
+}
+.head .wrapper .right .avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+  border-radius: 100%;
+}
+.head .wrapper .right .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.head .wrapper .right .register {
+  vertical-align: top;
+  display: inline-block;
+}
+.head .wrapper .right .register a {
+  font-weight: 600;
+  margin-left: 4px;
+  color: blue;
+}
+
+.login-center {
+  width: 1000px;
+  height: 600px;
+  margin: 20px auto;
+}
+.login-center .left {
+  width: 450px;
+  height: 350px;
+  float: left;
+  margin: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+.login-center .right {
+  background-color: #FFF;
+  width: 440px;
+  padding: 19px 19px 60px 19px;
+  border: solid 1px #E6E6E6;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+.login-center .right .arrow {
+  background: url(../img/login_pic.png) no-repeat -280px 0;
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: 160px;
+}
+
+.login-main {
+  width: 100%;
+}
+.login-main ul {
+  height: 40px;
+  width: 100%;
+  border-bottom: solid 1px #E6E6E6;
+}
+.login-main ul li {
+  float: left;
+  width: 50%;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+.login-main ul li 　
+i {
+  display: block;
+  margin-left: -10px;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  bottom: -19px;
+}
+
+.login-main .active {
+  border-bottom: 3px solid #FF500B;
+}
+.login-main .active i {
+  display: block;
+  border: 8px solid transparent;
+  border-top-color: #FF500B;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  bottom: -19px;
+}
+
+.login-text {
+  height: 250px;
+  margin-top: 30px;
+  padding: 0 40px 20px 40px;
+  position: relative;
+}
+.login-text .login-text-main {
+  width: 370px;
+  background: #fff;
+  position: absolute;
+  left: 36px;
+  top: 0;
+}
+.login-text .login-text-main3 {
+  width: 370px;
+  position: absolute;
+  background: #fff;
+  left: -400px;
+  top: 0;
+  display: none;
+}
+
+.login-text-main3 .fasong a {
+  background: #21b384;
+  padding: 0 5px;
+  color: #fff;
+}
+
+.zhanghao {
+  width: 370px;
+  height: 40px;
+  border: #E6E6E6 1px solid;
+  position: relative;
+}
+.zhanghao dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 88px;
+  padding: 10px 0 10px 20px;
+  float: left;
+  width: 66px;
+}
+.zhanghao dd {
+  float: left;
+  height: 28px;
+  padding: 6px 0;
+}
+.zhanghao dd input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  width: 150px;
+  height: 28px;
+}
+.zhanghao .cuo {
+  width: 120px;
+  height: 28px;
+  background: #FFF5D9;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+  width: 140px;
+}
+.zhanghao .cuo .cuo-1 {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0 0 4px;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background: #F22D25;
+  color: #fff;
+}
+.zhanghao .cuo .cuo-2 {
+  margin-top: 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+.password {
+  width: 370px;
+  height: 40px;
+  border: #E6E6E6 1px solid;
+  position: relative;
+  margin-top: 10px;
+}
+.password dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 88px;
+  padding: 10px 0 10px 20px;
+  float: left;
+}
+.password dd {
+  float: left;
+  height: 28px;
+  padding: 6px 0;
+  padding: 6px 0;
+}
+.password dd input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  width: 150px;
+  height: 28px;
+}
+.password .cuo {
+  width: 120px;
+  height: 28px;
+  background: #FFF5D9;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+  width: 150px;
+  height: 25px;
+}
+.password .cuo .cuo-1 {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0 0 4px;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background: #F22D25;
+  color: #fff;
+}
+.password .cuo .cuo-2 {
+  margin-top: 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+.yanzhnegma {
+  margin-top: 10px;
+  width: 370px;
+  height: 40px;
+  border: #E6E6E6 1px solid;
+  position: relative;
+}
+.yanzhnegma .left-1 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 88px;
+  padding: 10px 0 10px 20px;
+  float: left;
+}
+.yanzhnegma .middle {
+  float: left;
+  height: 28px;
+  padding: 8px 0;
+  width: 100px;
+}
+.yanzhnegma .middle input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  width: 150px;
+  height: 28px;
+  display: block;
+  width: 100px;
+}
+.yanzhnegma .right-1 {
+  float: right;
+  height: 40px;
+  width: 120px;
+  position: relative;
+}
+.yanzhnegma .right-1 .huan {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 38px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  text-align: center;
+}
+.yanzhnegma .right-1:hover .huan {
+  display: block;
+}
+
+.right-1 .yanzheng {
+  background: #EEEEEE;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.right-1 .cuo {
+  width: 120px;
+  height: 28px;
+  background: #FFF5D9;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+  width: 130px;
+  right: 60px;
+  top: 40px;
+}
+.right-1 .cuo .cuo-1 {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0 0 4px;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background: #F22D25;
+  color: #fff;
+}
+.right-1 .cuo .cuo-2 {
+  margin-top: 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+.zidong {
+  margin-top: 5px;
+  width: 370px;
+  height: 30px;
+}
+.zidong .zidong-left {
+  float: left;
+}
+.zidong .zidong-left input {
+  width: 14px;
+  height: 14px;
+}
+.zidong .zidong-left span {
+  font-size: 14px;
+  vertical-align: top;
+  color: #7b7b7b;
+}
+.zidong .zidong-right {
+  float: right;
+}
+.zidong .zidong-right a {
+  color: blue;
+  font-size: 14px;
+}
+
+.button {
+  width: 370px;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.button input {
+  width: 100%;
+  height: 100%;
+  background: #FF500B;
+  border: none;
+  border-radius: 5px;
+  font-family: "microsoft yahei";
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFf;
+  cursor: pointer;
+}
+
+.weixin {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 900;
+}
+.weixin i {
+  float: left;
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: url(../img/login_pic.png) no-repeat -64px 0;
+}
+.weixin span {
+  width: 40px;
+  height: 32px;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.weixin a {
+  display: block;
+  width: 100px;
+  height: 35px;
+}
+.weixin a:hover i {
+  background: url(../img/login_pic.png) no-repeat -160px 0;
+}
+.weixin a:hover span {
+  color: #4EA335;
+}
+
+.weixin p {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=login.css.map */

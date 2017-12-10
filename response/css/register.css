@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #F2F2F2;
+  padding: 5px;
+}
+
+.head {
+  width: 100%;
+  background: #fff;
+  height: 80px;
+}
+.head .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.head .wrapper .left {
+  float: left;
+}
+.head .wrapper .right {
+  font-size: 14px;
+  color: #AAA;
+  line-height: 24px;
+  float: right;
+  height: 24px;
+  margin-top: 50px;
+}
+.head .wrapper .right a {
+  font-weight: 600;
+  margin-left: 4px;
+  color: #06C;
+}
+
+#nc-register-bg {
+  width: 100%;
+  height: 630px;
+  background: url(https://static.cnrmall.com/web/static/img/register_bg.png);
+  padding-top: 60px;
+}
+#nc-register-bg .nc-register-box {
+  background: rgba(0, 0, 0, 0.15);
+  width: 860px;
+  height: 560px;
+  padding: 10px;
+  margin: 0px auto;
+}
+#nc-register-bg .nc-register-box .layout {
+  background-color: #FFF;
+  display: block;
+  width: 820px;
+  height: 520px;
+  padding: 19px;
+  border: solid 1px #CCC;
+  overflow: hidden;
+}
+#nc-register-bg .nc-register-box .layout .left {
+  width: 600px;
+  height: 520px;
+  float: left;
+}
+#nc-register-bg .nc-register-box .layout .left .zhuce {
+  width: 580px;
+  height: 40px;
+}
+#nc-register-bg .nc-register-box .layout .left .zhuce .phone {
+  width: 100%;
+  height: 100%;
+  border-bottom: solid 1px #E6E6E6;
+}
+#nc-register-bg .nc-register-box .layout .left .zhuce .phone a {
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+#nc-register-bg .liebiao {
+  width: 580px;
+}
+#nc-register-bg .liebiao .biao {
+  padding: 25px 80px 0 100px;
+}
+#nc-register-bg .liebiao .biao .shouji, #nc-register-bg .liebiao .biao .password, #nc-register-bg .liebiao .biao .confirm-password {
+  width: 400px;
+  height: 40px;
+  border: #E6E6E6 1px solid;
+  position: relative;
+  margin-top: 10px;
+}
+#nc-register-bg .liebiao .biao .shouji dt, #nc-register-bg .liebiao .biao .password dt, #nc-register-bg .liebiao .biao .confirm-password dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 88px;
+  padding: 10px 0 10px 20px;
+  float: left;
+}
+#nc-register-bg .liebiao .biao .shouji dd, #nc-register-bg .liebiao .biao .password dd, #nc-register-bg .liebiao .biao .confirm-password dd {
+  float: left;
+  height: 28px;
+  padding: 6px 0;
+}
+#nc-register-bg .liebiao .biao .shouji dd input, #nc-register-bg .liebiao .biao .password dd input, #nc-register-bg .liebiao .biao .confirm-password dd input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  width: 150px;
+  height: 28px;
+  font-size: 12px;
+}
+#nc-register-bg .liebiao .biao .shouji .cuo, #nc-register-bg .liebiao .biao .password .cuo, #nc-register-bg .liebiao .biao .confirm-password .cuo {
+  width: 120px;
+  height: 28px;
+  background: #FFF5D9;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+  width: 150px;
+}
+#nc-register-bg .liebiao .biao .shouji .cuo .cuo-1, #nc-register-bg .liebiao .biao .password .cuo .cuo-1, #nc-register-bg .liebiao .biao .confirm-password .cuo .cuo-1 {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0 0 4px;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background: #F22D25;
+  color: #fff;
+}
+#nc-register-bg .liebiao .biao .shouji .cuo .cuo-2, #nc-register-bg .liebiao .biao .password .cuo .cuo-2, #nc-register-bg .liebiao .biao .confirm-password .cuo .cuo-2 {
+  margin-top: 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+.username {
+  width: 400px;
+  height: 40px;
+  border: #E6E6E6 1px solid;
+  position: relative;
+}
+.username dt {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 88px;
+  padding: 10px 0 10px 20px;
+  float: left;
+}
+.username dd {
+  float: left;
+  height: 28px;
+  padding: 6px 0;
+}
+.username dd input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  width: 150px;
+  height: 28px;
+  font-size: 8px;
+  width: 190px;
+}
+.username .cuo {
+  width: 120px;
+  height: 28px;
+  background: #FFF5D9;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+}
+.username .cuo .cuo-1 {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0 0 4px;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background: #F22D25;
+  color: #fff;
+}
+.username .cuo .cuo-2 {
+  margin-top: 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+#nc-register-bg .yanzhnegma {
+  margin-top: 10px;
+  width: 400px;
+  height: 40px;
+  border: #E6E6E6 1px solid;
+  position: relative;
+}
+#nc-register-bg .yanzhnegma .left-1 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  width: 88px;
+  padding: 10px 0 10px 20px;
+  float: left;
+}
+#nc-register-bg .yanzhnegma .middle {
+  float: left;
+  height: 28px;
+  padding: 8px 0;
+  width: 150px;
+}
+#nc-register-bg .yanzhnegma .middle input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  width: 150px;
+  height: 28px;
+  font-size: 12px;
+  display: block;
+}
+#nc-register-bg .yanzhnegma .right-1 {
+  float: right;
+  height: 40px;
+  width: 120px;
+  position: relative;
+}
+#nc-register-bg .yanzhnegma .right-1 .huan {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 38px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  text-align: center;
+}
+#nc-register-bg .yanzhnegma .right-1:hover .huan {
+  display: block;
+}
+
+.right-1 .yanzheng {
+  background: #EEEEEE;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.right-1 .cuo {
+  width: 120px;
+  height: 28px;
+  background: #FFF5D9;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+  width: 180px;
+  right: 0px;
+  top: 40px;
+}
+.right-1 .cuo .cuo-1 {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin: 4px 0 0 4px;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  background: #F22D25;
+  color: #fff;
+}
+.right-1 .cuo .cuo-2 {
+  margin-top: 5px;
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+#nc-register-bg .xieyi {
+  width: 400px;
+  height: 30px;
+  margin-top: 20px;
+}
+#nc-register-bg .xieyi a {
+  color: blue;
+}
+#nc-register-bg .xieyi span {
+  margin: 0 5px;
+}
+
+#nc-register-bg .button {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+#nc-register-bg .button input {
+  width: 100%;
+  height: 100%;
+  background: #FF500B;
+  border: none;
+  border-radius: 5px;
+  font-family: "microsoft yahei";
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFf;
+  cursor: pointer;
+}
+
+#nc-register-bg .right {
+  width: 200px;
+  height: 500px;
+  float: right;
+  padding: 20px 0 0 19px;
+  border-left: solid 1px #E6E6E6;
+}
+#nc-register-bg .right .right-after h4 {
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#nc-register-bg .right .right-after ul li {
+  color: #999;
+  line-height: 24px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  font-size: 12px;
+}
+#nc-register-bg .right .right-after ul li i {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  float: left;
+  vertical-align: middle;
+}
+#nc-register-bg .right .right-after ul li .li1 {
+  background: url(../img/login_pic.png) no-repeat 0 -78px;
+}
+#nc-register-bg .right .right-after ul li .li2 {
+  background: url(../img/login_pic.png) no-repeat -31px -78px;
+}
+#nc-register-bg .right .right-after ul li .li3 {
+  background: url(../img/login_pic.png) no-repeat -61px -78px;
+}
+#nc-register-bg .right .right-after ul li .li4 {
+  background: url(../img/login_pic.png) no-repeat -92px -78px;
+}
+#nc-register-bg .right .right-after ul li .li5 {
+  background: url(../img/login_pic.png) no-repeat -121px -78px;
+}
+
+/*# sourceMappingURL=register.css.map */

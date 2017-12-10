@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible" />		
+		<title></title>
+       <link rel="stylesheet" href="css/register.css"/>
+		
+	</head>
+	<body>
+		<div class='head'><!--z注册头部-->
+			<div class="wrapper clear">
+				<div class="left">
+					<h1 class="site-logo"><a href="https://www.cnrmall.com/"><img src="https://pic4.cnrmall.com/image/be/d4/bed4afca2106a3cb0049d937c31e0f11.png" alt=""></a>
+				</div>
+				<div class="right">
+					我已经注册，现在就<a href="https://www.cnrmall.com/login" title="" class="register">登录</a>
+				</div>
+			</div>
+		</div>	
+			<div id="nc-register-bg">
+				<div class="nc-register-box">
+					<div class="layout">
+						<div class="left">
+							<div class="zhuce">
+								<div class="phone">
+									<a href="#">手机注册</a>
+								</div>
+								
+							</div>
+							
+							<div class="liebiao">
+								<div class="biao">
+									<form action="php/register-login.php" method="post">
+										<div class="username" id="username"><!--用户名-->
+											<dl class="clear">
+												<dt>用户名　:</dt>
+												<dd>
+													 <input name="regusername" class="text" id="reg-username" placeholder="6-20个中、英文、数字及“-”符号" type="text">
+												</dd>
+												
+											</dl>
+											<div class="cuo"><!--验证错误-->
+												 <span class="cuo-1">√</span>
+												 <span class="cuo-2"></span>
+											</div>
+										</div>
+										<div class="password" id="password"><!--密码-->
+											<dl>
+												<dt>设置密码　:</dt>
+												<dd>
+													<input type="password" placeholder="6-16位英文，字母 字符" name="regpassword" />
+												</dd>
+											</dl>
+										    <div class="cuo"><!--验证错误-->
+												<span class="cuo-1">√</span>
+												<span class="cuo-2"></span>
+											</div>
+									    </div>
+									    
+									    <div class="confirm-password" id="confirm-password"><!--确认密码-->
+											<dl>
+												<dt>确认密码　:</dt>
+												<dd>
+													<input type="password" placeholder="输入账户密码" />
+												</dd>
+											</dl>
+										    <div class="cuo"><!--验证错误-->
+												<span class="cuo-1">√</span>
+												<span class="cuo-2"></span>
+											</div>
+									    </div>
+									    
+									    
+										
+										<div class="shouji" id="telphone"><!--手机注册-->
+											<dl class="clear">
+												<dt>手机号　:</dt>
+												<dd>
+													 <input name="mobile" class="text" id="mobile" placeholder="请输入手机号码" type="text">
+												</dd>
+												
+											</dl>
+											<div class="cuo"><!--验证错误-->
+												<span class="cuo-1">√</span>
+												<span class="cuo-2"></span>
+											</div>
+										</div>
+										<div class="yanzhnegma clear" id="yan-z"><!--验证码-->
+											<div class="left-1">
+												验证码　:
+											</div>
+											<div class="middle">
+												<input type="text" name="" id="" placeholder="请输入验证码" />
+											</div>
+											<div class="right-1">
+												<div class="yanzheng">
+												
+												</div>
+												<div class="huan">
+													看不清，换一张
+												</div>
+												<div class="cuo">
+													<span class="cuo-1">√</span>
+												    <span class="cuo-2"></span>
+												</div>
+											</div>
+										</div>
+										<div class="xieyi"><!--服务协议-->
+											<input type="checkbox" id="" value="" checked="checked"/>
+										    <span id="">阅读并同意</span>
+										    <a href="">《服务协议》</a>
+										    	
+										   
+										</div>
+										<div class="button" id="button-regi"><!--下一步-->
+											<input type="submit" id="sub" value="用户注册"  name="submit"/>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							 <div class="right-after">
+							 	<h4>注册之后您可以</h4>
+							 	<ul class="zhuceul">
+						              <li class="ico01"><i class="li1"></i>购买商品支付订单</li>
+						              <li class="ico02"><i class="li2"></i>收藏商品收藏店铺</li>
+						              <li class="ico03"><i class="li3"></i>安全交易诚信无忧</li>	              
+						              <li class="ico05"><i class="li4"></i>会员等级享受特权</li>
+						              <li class="ico06"><i class="li5"></i>交易评价站外分享</li>
+						        </ul>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+		<div id="footer">
+			
+		</div>
+        <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+	    	$('#footer').load('public-footer.html')	    	
+    </script>
+	</body>
+</html>
